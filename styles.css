@@ -30,7 +30,7 @@ body {
     position: relative;
     padding: 6px 20px;
 }
-.logo img {width: 130px;}
+.logo img {width: 35px;}
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
 .menu li a {
