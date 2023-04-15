@@ -1,0 +1,856 @@
+<html lang="en-us , pl-pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <title>
+    FYBER GENERATOR STORE
+  </title>
+
+
+  <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+  <link href="https://cdn.sellix.io/static/css/embed.css" rel="stylesheet" />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./grid.css">
+  <style type="text/css">
+    html::-webkit-scrollbar {
+      width: 0 !important;
+    }
+
+    @-moz-document url-prefix() {
+      html {
+        scrollbar-width: none !important;
+      }
+    }
+  </style>
+
+  <style type="text/css">
+    .snowflake {
+      color: #ffffff;
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      text-shadow: 0 0 5px #000;
+    }
+
+    @-webkit-keyframes snowflakes-fall {
+      0% {
+        top: -10%
+      }
+
+      100% {
+        top: 100%
+      }
+    }
+
+    @-webkit-keyframes snowflakes-shake {
+
+      0%,
+      100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+      }
+
+      50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px)
+      }
+    }
+
+    @keyframes snowflakes-fall {
+      0% {
+        top: -10%
+      }
+
+      100% {
+        top: 100%
+      }
+    }
+
+    @keyframes snowflakes-shake {
+
+      0%,
+      100% {
+        transform: translateX(0)
+      }
+
+      50% {
+        transform: translateX(80px)
+      }
+    }
+
+    .snowflake {
+      position: fixed;
+      top: -10%;
+      z-index: 9999;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      cursor: default;
+      -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+      -webkit-animation-duration: 10s, 3s;
+      -webkit-animation-timing-function: linear, ease-in-out;
+      -webkit-animation-iteration-count: infinite, infinite;
+      -webkit-animation-play-state: running, running;
+      animation-name: snowflakes-fall, snowflakes-shake;
+      animation-duration: 10s, 3s;
+      animation-timing-function: linear, ease-in-out;
+      animation-iteration-count: infinite, infinite;
+      animation-play-state: running, running
+    }
+
+    .snowflake:nth-of-type(0) {
+      left: 1%;
+      -webkit-animation-delay: 0s, 0s;
+      animation-delay: 0s, 0s
+    }
+
+    .snowflake:nth-of-type(1) {
+      left: 10%;
+      -webkit-animation-delay: 1s, 1s;
+      animation-delay: 1s, 1s
+    }
+
+    .snowflake:nth-of-type(2) {
+      left: 20%;
+      -webkit-animation-delay: 6s, .5s;
+      animation-delay: 6s, .5s
+    }
+
+    .snowflake:nth-of-type(3) {
+      left: 30%;
+      -webkit-animation-delay: 4s, 2s;
+      animation-delay: 4s, 2s
+    }
+
+    .snowflake:nth-of-type(4) {
+      left: 40%;
+      -webkit-animation-delay: 2s, 2s;
+      animation-delay: 2s, 2s
+    }
+
+    .snowflake:nth-of-type(5) {
+      left: 50%;
+      -webkit-animation-delay: 8s, 3s;
+      animation-delay: 8s, 3s
+    }
+
+    .snowflake:nth-of-type(6) {
+      left: 60%;
+      -webkit-animation-delay: 6s, 2s;
+      animation-delay: 6s, 2s
+    }
+
+    .snowflake:nth-of-type(7) {
+      left: 70%;
+      -webkit-animation-delay: 2.5s, 1s;
+      animation-delay: 2.5s, 1s
+    }
+
+    .snowflake:nth-of-type(8) {
+      left: 80%;
+      -webkit-animation-delay: 1s, 0s;
+      animation-delay: 1s, 0s
+    }
+
+    .snowflake:nth-of-type(9) {
+      left: 90%;
+      -webkit-animation-delay: 3s, 1.5s;
+      animation-delay: 3s, 1.5s
+    }
+
+    .snowflake:nth-of-type(10) {
+      left: 25%;
+      -webkit-animation-delay: 2s, 0s;
+      animation-delay: 2s, 0s
+    }
+
+    .snowflake:nth-of-type(11) {
+      left: 65%;
+      -webkit-animation-delay: 4s, 2.5s;
+      animation-delay: 4s, 2.5s
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <header>
+  <nav>
+      <ul class='nav-bar'>
+          <li class='logo'><a href='#'><img src='./fybershop.jpg'/></a></li>
+          <input type='checkbox' id='check' />
+          <span class="menu">
+              <li><a href="./index.html">Dom</a></li>
+              <li><a href="https://discord.gg/n4Pm8Wb47m">Discord</a></li>
+              <li><a href="./metody-płatności.html">Metody Płatności</a></li>
+              <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+  </nav>
+  </header>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <br> 
+      <br> 
+      <div class="content mt-4">
+        <h1 
+
+          style="text-align:center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; font-size: 100px;">
+          FYBER <span class="text-danger"> STORE</span></h1>
+      </div>
+        
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="product-container">
+        <div class="grids">
+
+          <!-- Copy this -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./netflix.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">netflix </span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- po odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10 <span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price"> 21 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Copy this -->
+
+          <!-- CDA -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./dis.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">disney + </span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10 <span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price"> 15 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- disney -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./hbomax.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">HboMax </span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10 <span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price"> 19 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- nord -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./cda.jpg">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">cda.pl PREMIUM </span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">15 <span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price"> 19 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Ipvanish -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./odrabiamyfb1024.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">odrabiamy.pl PREMIUM </span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- Obecnie brak</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10 <span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price"> 20 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  
+          <!-- Brainly -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./Brainly.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">Brainly.pl </span>
+                <span class="title">- Konto na zawsze</span>
+                <span class="title">- odbiór otwórz ticket</span>
+                        <span class="description"></span>
+                        <div class="card-footer">
+                
+                          <span class="price">15 <span>zł</span></span>
+                  <span class="price"><span>LUB</span></span>
+                  <span class="price"> 15 <span>ZAPROSZEŃ</span></span>
+                   
+                        </div>
+                      </div>
+                    </a>
+                  </div>		  
+		 
+
+          <!-- netflix -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./unnamed.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">DuoLingo</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">15<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">19<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Pornhub -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./ph.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">PornHub</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">25<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">30<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Spotify -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img class="card-img-top" src="./spotify.jpg" alt="Spotify logo gif">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">Spotify</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">20<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">30<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- hulu -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./hulu.jpg">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">Hulu</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">20<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">25<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+		  
+		  
+          <!-- Kaspersky -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./image_logo.jpg">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">Kaspersky</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">40<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">50<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- McAfee -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./mcafee-logo-ogimage.webp">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">McAfee</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">20<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">25 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <!-- MediaFire -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./famemma.webp">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">famemma transmisja</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">15 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <!-- mega -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./highleague.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">highleague transmisja</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">15 <span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          
+
+
+
+
+
+
+          <!-- Duolingo -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./nord.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">NordVpn</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">30<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">25<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+          <!-- HboMax -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./viaplay_image.jpg">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">ViaPlay</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">15<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">30<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Duolingo -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./MediaFire_review.webp">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">MediaFire</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">15<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+          <!-- Duolingo -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./mega.nz_.png">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">meganz
+                </span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">10<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">15<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <!-- Duolingo -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./van.jpg">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">Ipvanish</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">25<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">20<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+          <!-- Duolingo -->
+          <div class="grid">
+            <a class="card" data-shoppy-product="">
+              <div class="wrapper">
+                <div class="image-wrapper">
+                  <img src="./PicsArt_logo_-_Varient_colored.jpg">
+                </div>
+              </div>
+              <div class="content">
+                <span class="title">picsart</span>
+				<span class="title">- Konto na zawsze</span>
+				<span class="title">- odbiór otwórz ticket</span>
+                <span class="description"></span>
+                <div class="card-footer">
+				
+                  <span class="price">20<span>zł</span></span>
+				  <span class="price"><span>LUB</span></span>
+				  <span class="price">25<span>ZAPROSZEŃ</span></span>
+				   
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+		  
+          
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="copyright">
+          ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script> FYBER GENERATOR <i class="tim-icons icon-heart-2"></i>
+        </div>
+      </div>
+    </footer>
+  </div>
+       
+</script>
+
+
+
+
+
+
+
+      
+    </body>
+    
+
+
+</html>
